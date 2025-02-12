@@ -1,67 +1,67 @@
-# Analyseur de fichiers et lignes de code
+# File and Code Line Analyzer
 
-## Description
-Ce script PHP permet d'analyser un dossier donné en comptant le nombre de fichiers et de lignes de code pour des extensions spécifiques. Il est utile pour obtenir des statistiques sur un projet et mieux comprendre sa structure.
+## Description  
+This PHP script analyzes a given directory by counting the number of files and lines of code for specific extensions. It is useful for getting project statistics and understanding its structure better.  
 
-## Fonctionnalités
-- Demande à l'utilisateur le dossier à analyser
-- Demande les extensions de fichiers à inclure dans l'analyse
-- Parcours récursivement tous les fichiers du dossier
-- Compte le nombre de fichiers et le total de lignes de code (en excluant les lignes vides)
-- Affiche les résultats formatés avec un total général
+## Features  
+- Prompts the user for the directory to analyze  
+- Asks for the file extensions to include in the analysis  
+- Recursively scans all files in the directory  
+- Counts the number of files and total lines of code (excluding empty lines)  
+- Displays formatted results with an overall total  
 
-## Prérequis
-- PHP 8.3.12 >=
-- Accès en ligne de commande (Terminal, CMD ou PowerShell)
+## Prerequisites  
+- PHP >= 8.3.12 installed on your system  
+- Command-line access (Terminal, CMD, or PowerShell)  
 
-## Installation
-1. Clonez ce repository :
-   ```sh
-   git clone https://github.com/NoualAli/file_analyzer.git
-   ```
-2. Accédez au dossier du projet :
-   ```sh
-   cd nom-du-projet
-   ```
-3. Assurez-vous que PHP est bien installé (Ce script a été testé avec PHP 8.3.12) :
-   ```sh
-   php -v
-   ```
+## Installation  
+1. Clone this repository:  
+   ```sh  
+   git clone https://github.com/NoualAli/file_analyzer.git  
+   ```  
+2. Navigate to the project folder:  
+   ```sh  
+   cd repository-name  
+   ```  
+3. Ensure PHP is installed (Tested with php 8.3.12):  
+   ```sh  
+   php -v  
+   ```  
 
-## Utilisation
-1. Exécutez le script dans un terminal :
-   ```sh
-   php file_analyzer.php
-   ```
-2. Entrez le chemin du dossier à analyser lorsqu'il est demandé.
-3. Entrez les extensions à analyser une par une (exemple : `php`, `js`, `html`).
-4. Tapez vide lorsque vous avez terminé d'entrer les extensions.
-5. Attendez que l'analyse soit effectuée.
-6. Les résultats s'afficheront sous la forme :
+## Usage  
+1. Run the script in a terminal:  
+   ```sh  
+   php file_analyzer.php  
+   ```  
+2. Enter the path of the directory to analyze when prompted.  
+3. Enter the file extensions to analyze one by one (e.g., `php`, `js`, `html`).  
+4. When you have finished entering extensions, just tape enter. 
+5. Wait for the analysis to complete.  
+6. The results will be displayed in the following format:  
 
-   ```sh
-   📊 Résultats de l'analyse :
-   🔹 Extension .php → Fichiers : 25, Lignes : 10 234
-   🔹 Extension .js → Fichiers : 12, Lignes : 3 450
+   ```sh  
+   📊 Analysis Results:  
+   🔹 Extension .php → Files: 25, Lines: 10,234  
+   🔹 Extension .js → Files: 12, Lines: 3,450  
 
-   📌 Total général :
-   📂 Nombre total de fichiers analysés : 37
-   📄 Nombre total de lignes de code : 13 684
-   ```
+   📌 Overall Total:  
+   📂 Total number of analyzed files: 37  
+   📄 Total number of code lines: 13,684  
+   ```  
 
-## Exemple d'utilisation
-Si vous souhaitez analyser un projet dans `/Users/macbook/Documents/projet`, avec des fichiers `.php` et `.js` :
+## Example Usage  
+If you want to analyze a project located in `/Users/macbook/Documents/project`, with `.php` and `.js` files:  
 ```
-Entrez le chemin du dossier à analyser : /Users/macbook/Documents/projet
-Entrez les extensions à analyser (une par une, entrer vide pour terminer) :
-Extension : php
-Extension : js
-Extension :
+Enter the directory path to analyze: /Users/macbook/Documents/project  
+Enter the file extensions to analyze (one by one, tape enter to finish):  
+Extension: php  
+Extension: js  
+Extension:  
 ```
 
-## Contributions
-Les contributions sont les bienvenues ! N'hésitez pas à proposer des améliorations via des pull requests.
+## Contributions  
+Contributions are welcome! Feel free to submit improvements via pull requests.  
 
-## Licence
-Ce projet est sous licence MIT. Vous êtes libre de l'utiliser et de le modifier selon vos besoins.
+## License  
+This project is licensed under the MIT License. You are free to use and modify it as needed.
 
